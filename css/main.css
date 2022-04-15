@@ -1,0 +1,298 @@
+html { 
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+}	
+
+.container{
+	width: 90%;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875rem;
+}
+h2 {
+	font-size: 1.125rem;
+}
+h3 {
+	font-size: .75rem;
+}
+
+p {
+	font-size: .875rem;
+	line-height: 21px;
+}
+
+header {
+	border-bottom: 3px solid #77a466;
+}
+
+header h1 {
+	padding: 20px 0;
+	text-align: center;
+	border-bottom: 4px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	display:flex;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+header nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	display: flex;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875rem;
+	padding: 0 10px;
+	
+}
+header nav ul li a{
+	display: flex;
+	text-decoration: none;
+	color:#77a466;
+	padding: 10px;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1rem;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	border-top: 1px solid #eee;
+}
+
+.section-two {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.menu {
+	list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    line-height: 2;
+}
+.menu li {
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1rem;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1rem;
+	line-height: 24px;
+}
+
+footer {
+	border-top: 3px solid #eee;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875rem;
+}
+
+/****************** Tablet Size *****************/
+
+@media screen 
+and (min-width: 768px) 
+and (max-width: 1199px)
+ {
+	html {
+		display: flex;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	 header {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+	 }
+
+	 .top-section {
+		 display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	 }
+
+	.bottom-section {
+		display: flex;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		display: flex;
+		flex-flow: row wrap;
+		width: 33%;
+		justify-content: flex-start;
+	}
+
+	.section-one {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section-two {
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		display: flex;
+		justify-content: center;
+	}
+
+	.reviews {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+	}
+
+	.section-three {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+	}
+
+
+	footer {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+ }	
+
+/********************* Desktop ***********************/
+@media screen and (min-width: 1200px)
+ {
+	html {
+		display: flex;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	 header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	 }
+
+	 header h1 {
+		 border-bottom: none;
+	 }
+
+	 header nav ul {
+		 display: flex;
+		 flex-direction: row;
+	 }
+
+	 .top-section {
+		 display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	 }
+
+	 .main-image {
+		 width: 100%;
+	 }
+
+	.bottom-section {
+		display: flex;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		display: flex;
+		width: 33%;
+	}
+
+	.section-one {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section-two {
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		display: flex;
+	}
+
+	.section-two h3 {
+		padding-left: 10px;
+	}
+	.reviews {
+		display: flex;
+    	align-items: center;
+    	width: 90%;
+    	padding-left: 10px;
+	}
+
+	.section-three {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+	}
+
+	footer {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+ }	
